@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  background-color: rgb(22, 103, 114);
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+.score {
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.score h2 {
+  border-bottom: 2px solid white;
+}
+.score p {
+  text-align: center;
+  padding: 10px;
+  font-size: 28px;
+}
+.intro {
+  display: flex;
+  height: 40vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  transition: opacity 0.2s ease-in;
+}
+.intro h1 {
+  font-size: 50px;
+}
+.intro button,
+.match button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 20px;
+  width: 30%;
+  font-weight: 600;
+}
+button {
+  background-color: rgb(2, 112, 112);
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 5px;
+  color: antiquewhite;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 0.1s ease-in-out;
+  background-color: rgb(7, 54, 54);
+  border: none;
+}
+.title {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.player-score {
+  justify-content: flex-start;
+}
+.computer-score {
+  justify-content: flex-end;
+}
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.winner {
+  justify-content: space-around;
+  text-align: center;
+  font-size: 40px;
+}
+.hands,
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.computer-hand {
+  transform: rotateY(-50%);
+}
+.player-hand {
+  transform: rotateY(180deg);
+}
+
+/*Javascript classes*/
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes playerShake {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  10% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  20% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  30% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  40% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  60% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  70% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  80% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  90% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+
+@keyframes computerShake {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(20px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(20px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

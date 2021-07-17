@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!--Main Game Canvas-->
+    <section class="game">
+      <!--Score Tracker-->
+      <div class="score">
+        <div class="player-score">
+          <h2>Player Score</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Computer Score</h2>
+          <p>0</p>
+        </div>
+      </div>
+      <!--Score Tracker Ends-->
+
+      <!--Intro Screen-->
+      <div class="intro">
+        <h1>Rock, Paper or Scissors? 
+        </br>First to 3!</h1>
+        <button>Play Game!</button>
+      </div>
+      <!--Intro Screen Ends-->
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choose Your Weapon!</h2>
+        <div class="hands">
+          <img class="player-hand" src="images/rock.png" alt="" />
+          <img class="computer-hand" src="images/rock.png" alt="" />
+        </div>
+
+        <!--Button Container-->
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
+        <!--Button Container Ends-->
+      </div>
+    </section>
+  </body>
+</html>
